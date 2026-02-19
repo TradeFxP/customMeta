@@ -1,6 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+// Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Import Font Awesome CSS
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+// Import Swiper CSS
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// Import main CSS (this should be last)
 import './index.css';
+import './custom-theme.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

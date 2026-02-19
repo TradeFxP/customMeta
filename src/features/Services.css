@@ -1,0 +1,324 @@
+/* Services Hexagon Section */
+.services-hexagon-section {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  overflow: hidden;
+}
+
+.section-description {
+  color: #2a1f54;
+  font-size: 18px;
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+/* Hexagon Grid Layout */
+.hexagon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+  position: relative;
+  padding: 20px;
+}
+
+/* Individual Hexagon Item */
+.hexagon-item {
+  position: relative;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hexagon-item:hover {
+  transform: translateY(-15px) scale(1.05);
+  z-index: 10;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hexagon Shape */
+.hexagon-shape {
+  position: relative;
+  background: #ffffff;
+  border: 3px solid;
+  border-radius: 20px;
+  padding: 40px 30px;
+  min-height: 480px;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hexagon-item:hover .hexagon-shape {
+  box-shadow: 0 20px 60px rgba(254, 1, 0, 0.2);
+  border-width: 4px;
+}
+
+.hexagon-inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+.hexagon-item.active .hexagon-inner {
+  transform: scale(1.02);
+}
+
+/* Icon Styling */
+.hexagon-icon {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.hexagon-item:hover .hexagon-icon {
+  transform: rotateY(360deg);
+}
+
+.icon-emoji {
+  display: inline-block;
+  filter: drop-shadow(0 5px 15px rgba(254, 1, 0, 0.3));
+}
+
+/* Title & Description */
+.hexagon-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2C1654;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hexagon-description {
+  font-size: 15px;
+  color: #2a1f54;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* Feature Tags */
+.hexagon-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex: 1;
+}
+
+.feature-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a1f54;
+  transition: all 0.3s ease;
+}
+
+.hexagon-item:hover .feature-tag {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateX(5px);
+}
+
+.feature-tag span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Link Styling */
+.hexagon-link {
+  text-align: center;
+  margin-top: auto;
+}
+
+.hexagon-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: rgba(254, 1, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hexagon-link a:hover {
+  background: rgba(254, 1, 0, 0.2);
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(254, 1, 0, 0.3);
+}
+
+.hexagon-link a i {
+  transition: transform 0.3s ease;
+}
+
+.hexagon-link a:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* Floating Particles Effect */
+.floating-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: floatParticle 4s ease-in-out infinite;
+}
+
+.particle:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.particle:nth-child(2) {
+  top: 60%;
+  right: 15%;
+  animation-delay: 1.5s;
+}
+
+.particle:nth-child(3) {
+  bottom: 30%;
+  left: 20%;
+  animation-delay: 3s;
+}
+
+@keyframes floatParticle {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+  }
+}
+
+/* Center Connection Animation */
+.center-connection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pulse-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: 3px solid;
+  border-radius: 50%;
+  animation: pulseRing 3s ease-out infinite;
+  opacity: 0;
+}
+
+.pulse-ring.delayed {
+  animation-delay: 1.5s;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hexagon-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hexagon-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 10px;
+  }
+
+  .hexagon-shape {
+    min-height: 420px;
+    padding: 30px 20px;
+  }
+
+  .hexagon-icon {
+    font-size: 60px;
+  }
+
+  .hexagon-title {
+    font-size: 24px;
+  }
+
+  .hexagon-description {
+    font-size: 14px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hexagon-shape {
+    min-height: 400px;
+    padding: 25px 15px;
+  }
+
+  .hexagon-icon {
+    font-size: 50px;
+  }
+
+  .hexagon-title {
+    font-size: 20px;
+  }
+
+  .feature-tag {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}

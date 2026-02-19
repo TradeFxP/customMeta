@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import Header from './components/layout/Header';
+import Sidebar from './components/layout/Sidebar';
+import Home from './features/Home';
+import BackToTop from './components/common/BackToTop';
+import { initAllAnimations } from './utils/animations';
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    // Disable Lenis smooth scroll - use normal browser scroll
+    // initAllAnimations();
+  }, []);
+
+  const handleHamburgerClick = () => {
+    console.log('Hamburger clicked!'); // Debug log
+    setSidebarOpen(true);
+  };
+
+  const handleSidebarClose = () => {
+    console.log('Sidebar closing!'); // Debug log
+    setSidebarOpen(false);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onHamburgerClick={handleHamburgerClick} />
+      <Sidebar isOpen={sidebarOpen} onClose={handleSidebarClose} />
+      <main className="main-content">
+        <Home />
+      </main>
+      <BackToTop />
     </div>
   );
 }

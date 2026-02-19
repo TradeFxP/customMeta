@@ -1,15 +1,48 @@
-# Getting Started with Create React App
+# IT Solutions Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional React.js website with proper folder structure.
 
-## Available Scripts
+## 📁 Project Structure
 
-In the project directory, you can run:
+```
+src/
+├── api/                    # API client configuration and endpoints
+│   └── apiClient.js       # Axios client with interceptors
+│
+├── assets/                # Static assets
+│   ├── images/           # Image files
+│   └── styles/           # Global styles
+│
+├── components/            # Reusable components
+│   ├── common/           # Common components (Button, Input, etc.)
+│   └── layout/           # Layout components (Header, Footer, etc.)
+│
+├── config/               # Configuration files
+│   └── config.js        # App configuration
+│
+├── constants/            # Constants and enums
+│   └── index.js
+│
+├── features/             # Feature-based components
+│   ├── Home.jsx
+│   └── Home.css
+│
+├── hooks/                # Custom React hooks
+│   └── useFetch.js
+│
+├── services/             # Business logic layer
+│   └── dataService.js   # Data service for API calls
+│
+└── utils/                # Utility functions
+    └── helpers.js       # Helper functions
+```
+
+## 🚀 Available Scripts
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3010](http://localhost:3010) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
