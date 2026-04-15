@@ -76,10 +76,10 @@ const Footer = () => {
             <div className="row g-4 gy-5 justify-content-between">
               
               {/* About Section */}
-              <div className="col-md-6 col-lg-6 col-xxl-3">
+              <div className="col-md-6 col-lg-4 col-xxl-4">
                 <div className="footer-info">
                   <h2 className="footer-title title-highlight">
-                    <br /> Join Us
+                    <br /> Join Us 
                   </h2>
                   <p className="footer-desc">
                     Transform your business with cutting-edge IT solutions. Our team of experienced developers will guide you every step of the way with comprehensive support.
@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
 
               {/* Our Services */}
-              <div className="col-md-6 col-lg-3 col-xxl-2">
+              <div className="col-md-6 col-lg-2 col-xxl-2">
                 <div className="footer-links-group">
                   <h5 className="footer-title">Our Services</h5>
                   <div className="link-list">
@@ -104,7 +104,7 @@ const Footer = () => {
               </div>
 
               {/* Resources */}
-              <div className="col-md-6 col-lg-3 col-xxl-2">
+              <div className="col-md-6 col-lg-2 col-xxl-2">
                 <div className="footer-links-group">
                   <h5 className="footer-title">Resources</h5>
                   <div className="link-list">
@@ -121,14 +121,14 @@ const Footer = () => {
               </div>
 
               {/* Our Offices */}
-              <div className="col-md-6 col-lg-12 col-xxl-3">
+              <div className="col-md-6 col-lg-4 col-xxl-4">
                 <div className="footer-links-group">
                   <h5 className="footer-title">Our Offices</h5>
                   <div className="office-list">
                     <div className="office-item">
                       <span className="label">Head Office – India</span>
                       <h6 className="location">
-                        NAFA - BARTER Madhapur, Kavuri Hills, Hyderabad
+                        Lotus Heights # 264. 3, Kavuri Hills Phase 2 Rd, beside D-Mart, Kavuri Hills, Madhapur, Hyderabad, Telangana 500033.
                       </h6>
                     </div>
                   </div>

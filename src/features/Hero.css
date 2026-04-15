@@ -13,10 +13,10 @@
     #0099ff 70%,
     #00d4ff 100%
   );
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding: clamp(80px, 10vw, 120px) 0 clamp(64px, 8vw, 100px);
+  padding: clamp(40px, 5vw, 60px) 0 clamp(32px, 4vw, 50px);
 }
 
 /* ── Decorative overlay ── */
