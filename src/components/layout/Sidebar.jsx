@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useProjectModal } from '../../context/ProjectModalContext';
 import './Sidebar.css';
-import sidebarLogo from '../../assets/images/backgroundremoved.png';
+import sidebarLogo from '../../assets/images/logoupdated.png';
 
 const Sidebar = ({ isOpen, onClose }) => {
   const { openModal } = useProjectModal();
@@ -46,12 +46,12 @@ const Sidebar = ({ isOpen, onClose }) => {
           <div className="hamburger_top d-flex align-items-center justify-content-between">
             <div className="hamburger_logo">
               <a className="mobile_logo" href="/">
-                <img src={sidebarLogo} alt="MetaGen Technology" style={{ maxHeight: '50px', objectFit: 'contain' }} />
+                <img src={sidebarLogo} alt="MetaGen Technology" style={{ maxHeight: '52px', objectFit: 'contain' }} />
               </a>
             </div>
             <div className="hamburger_close">
-              <button className="hamburger_close_btn" onClick={onClose}>
-                <i className="fa-thin fa-times"></i>
+              <button className="hamburger_close_btn" onClick={onClose} aria-label="Close sidebar">
+                X
               </button>
             </div>
           </div>
