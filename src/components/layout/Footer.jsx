@@ -79,11 +79,49 @@ const Footer = () => {
               <div className="col-md-6 col-lg-4 col-xxl-4">
                 <div className="footer-info">
                   <h2 className="footer-title title-highlight">
-                    <br /> Join Us 
+                    <br /> Join Us
                   </h2>
                   <p className="footer-desc">
                     Transform your business with cutting-edge IT solutions. Our team of experienced developers will guide you every step of the way with comprehensive support.
                   </p>
+                  <div className="footer-social">
+                    <a
+                      href="https://www.facebook.com"
+                      className="social-icon"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Facebook"
+                    >
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com"
+                      className="social-icon"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Instagram"
+                    >
+                      <i className="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com"
+                      className="social-icon"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="LinkedIn"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      href="https://www.twitter.com"
+                      className="social-icon"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="X (Twitter)"
+                    >
+                      <i className="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -109,12 +147,12 @@ const Footer = () => {
                   <h5 className="footer-title">Resources</h5>
                   <div className="link-list">
                     <ul>
-                      <li><a href="/contact">Contact Us</a></li>
+                      {/* <li><a href="/contact">Contact Us</a></li> */}
                       <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-                      <li><a href="/blog">Blog Post</a></li>
-                      <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
-                      <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
-                      <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                      <li><Link to="/terms-and-conditions">Terms &amp; Conditions</Link></li>
+                      <li><Link to="/refund-cancellation-policy">Refund &amp; Cancellation</Link></li>
+                      <li><Link to="/return-policy">Return Policy</Link></li>
+                      <li><Link to="/shipping-policy">Shipping Policy</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -235,7 +273,7 @@ const Footer = () => {
       <div className="footer-copyright">
         <div className="container-fluid px-5">
           <div className="copyright-content">
-            <p>© 2026 <span className="company-name">MetaGen Technology</span>. All Rights Reserved. | Crafted with <i className="fa-solid fa-heart"></i> by IT Experts</p>
+            <p>© 2026 <span className="company-name">MetaGen Technology</span>. All Rights Reserved.</p>
           </div>
         </div>
       </div>

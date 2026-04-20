@@ -5,6 +5,10 @@ import Header from './components/layout/Header';
 import Sidebar from './components/layout/Sidebar';
 import Home from './features/Home';
 import PrivacyPolicy from './features/PrivacyPolicy';
+import TermsConditions from './features/TermsConditions';
+import RefundCancellation from './features/RefundCancellation';
+import ReturnPolicy from './features/ReturnPolicy';
+import ShippingPolicy from './features/ShippingPolicy';
 import BackToTop from './components/common/BackToTop';
 import { ProjectModalProvider } from './context/ProjectModalContext';
 
@@ -24,6 +28,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-and-conditions" element={<TermsConditions />} />
+              <Route path="/refund-cancellation-policy" element={<RefundCancellation />} />
+              <Route path="/return-policy" element={<ReturnPolicy />} />
+              <Route path="/shipping-policy" element={<ShippingPolicy />} />
             </Routes>
           </main>
           <BackToTop />

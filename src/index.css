@@ -11196,7 +11196,7 @@ section,
 .container,
 .card,
 .box {
-  background-color: #FBFCFD !important;
+  /* background-color: #FBFCFD !important; */
   color: #3D3F40 !important;
 }
 
