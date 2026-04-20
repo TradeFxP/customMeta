@@ -365,6 +365,37 @@
   font-weight: 400;
 }
 
+/* Social Icons */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FBFCFD;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  /* background: #08C0F7; */
+  border-color: #08C0F7;
+  color: #FBFCFD;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(8, 192, 247, 0.4);
+}
+
 /* Footer Links */
 .footer-links-group {
   margin-bottom: 30px;

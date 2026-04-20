@@ -84,16 +84,59 @@
   margin-bottom: 12px;
 }
 
-.privacy-section ul {
-  padding-left: 20px;
+.privacy-section ul,
+.privacy-section ol {
+  padding-left: 24px;
   margin-bottom: 14px;
 }
 
-.privacy-section ul li {
+.privacy-section ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: policy-counter;
+}
+
+.privacy-section ul li,
+.privacy-section ol li {
   color: #3D3F40;
   font-size: 15px;
   line-height: 1.8;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  background: rgba(8, 192, 247, 0.04);
+  border-left: 3px solid rgba(8, 192, 247, 0.3);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+}
+
+.privacy-section ul li {
+  padding: 8px 12px;
+  background: none;
+  border-left: none;
+  border-radius: 0;
+  padding-left: 0;
   margin-bottom: 6px;
+}
+
+.privacy-section ol li {
+  counter-increment: policy-counter;
+  padding-left: 52px;
+}
+
+.privacy-section ol li::before {
+  content: counter(policy-counter);
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(135deg, #0131e9, #08C0F7);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 26px;
 }
 
 .privacy-section a {
@@ -168,7 +211,9 @@
   .privacy-section { margin-bottom: 32px; }
   .privacy-section h2 { font-size: 18px; }
   .privacy-section p,
-  .privacy-section ul li { font-size: 14px; }
+  .privacy-section ul li,
+  .privacy-section ol li { font-size: 14px; }
+  .privacy-section ol li { padding: 12px 12px 12px 44px; }
   .privacy-contact { padding: 16px 18px; }
   .privacy-contact p { font-size: 14px !important; gap: 10px; }
 }
